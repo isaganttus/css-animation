@@ -1,0 +1,44 @@
+html, body {
+    margin: 10px;
+    padding: 0;
+    font-family: 'Roboto';
+    color: #222;
+    display: flexbox;
+}
+
+/* typography */
+
+h1{
+    font-size: 28px;
+    font-weight: 900;
+}
+
+p{
+    font-size: 18px;
+}
+
+
+/* layout */
+
+.toolbar{
+    display: none;
+}
+
+.double-btn{
+    display: none;
+}
+
+.split-btn{
+    display: none;
+}
+
+.ace-actions{
+    display: none;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    text-align: center;
+}
