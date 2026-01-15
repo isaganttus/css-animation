@@ -1,0 +1,52 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="index.css">
+	</head>
+
+	<body>
+        <div class="container">
+            <div class="dashboard">
+                <h2>Bet</h2>
+                <p id="bet-amount">$0</p>
+
+                <h2>Balance</h2>
+                <p id="balance-amount">$100</p>
+            </div>
+
+            <div class="gameplay">
+                <h1>Dealer</h1>
+                <p id="dealer-cards"></p>
+                <p id="dealer-sum"></p>
+
+                <h1>Player</h1>
+                <p id="player-cards"></p>
+                <p id="player-sum"></p>
+            </div>
+
+            <div id="root"></div>
+
+            <div id="toolbar" class="toolbar">
+
+                <div id="ace-actions" class="ace-actions">
+                    <button id="ace-one" onclick="turnAce('one')">Turn into one</button>
+                    <button id="ace-eleven" onclick="turnAce('eleven')">Turn into eleven</button>
+                </div>
+
+                <div id="main-actions" class="main-actions">
+                    <button id="hit-btn" onclick="hitBtn()">Hit</button>
+                    <button id="stand-btn" onclick="stand('player')">Stand</button>
+                    <button class="double-btn" id="double-btn">Double down</button>
+                    <button class="split-btn" id="split-btn">Split</button>
+                </div>
+            </div>
+
+            <div class="result">
+                <h1>Result</h1>
+                <p id="result"></p>
+            </div>
+        </div>
+		<script src="index.js"></script>
+	</body>
+
+</html>
